@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:35:20 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/20 14:22:29 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/21 17:38:43 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ int	ft_printf(const char *input, ...)
 		else
 		{
 			ft_print_c(input[i], &count);
-			count++;
 		}
 		i++;
 	}
