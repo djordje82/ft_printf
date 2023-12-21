@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 18:36:09 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/20 15:47:33 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/21 20:31:08 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void	ft_print_p(void *ptr, int *count)
 	else
 	{
 		ft_print_s("0x", count);
-		ft_print_x(ptr_address, count);
+		ft_print_x(ptr_address, 'x', count);
 	}
 }

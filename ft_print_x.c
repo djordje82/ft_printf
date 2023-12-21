@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 12:02:47 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/20 15:45:35 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/21 20:30:30 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,24 +34,29 @@ static char	*get_hex_base(unsigned int hx)
 	return (upper_hex);
 }
 
-void	ft_print_x(unsigned int hx, int *count)
+void	ft_print_x(unsigned int hx, char input, int *count)
 {
 	char	*hx_size;
 	int		i;
 	char	buffer[16];
 
-	hx_size = get_hex_base(hx);
+	hx_size = get_hex_base(input);
 	i = 0;
 	if (hx == 0)
 	{
-		write(1, &hx_size[0], 1);
+		if (write(1, &hx_size[0], 1) == -1)
+			return ;
 		(*count)++;
 	}
-	convert_to_hex(hx, buffer, hx_size, &i);
-	while (i > 0)
+	else
 	{
-		i--;
-		write(1, &buffer[i], 1);
-		(*count)++;
+		convert_to_hex(hx, buffer, hx_size, &i);
+		while (i > 0)
+		{
+			i--;
+			if (write(1, &buffer[i], 1) == -1)
+				return ;
+			(*count)++;
+		}
 	}
 }
