@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 18:11:04 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/20 13:19:08 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/21 22:50:18 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_print_c(char c, int *count)
 {
 	write(1, &c, 1);
-	*count = *count + 1;
+	(*count)++;
 }

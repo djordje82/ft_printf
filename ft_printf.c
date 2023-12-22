@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:35:20 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/21 20:44:44 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/21 22:26:46 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_printf(const char *input, ...)
 	i = 0;
 	count = 0;
 	if (!input[i])
-		return (-1);
+		return (0);
 	while (input[i])
 	{
 		if (input[i] == '%')
