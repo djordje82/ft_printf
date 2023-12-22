@@ -6,13 +6,13 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 12:02:47 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/22 11:39:50 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/22 12:34:45 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_print_x(unsigned int hx, char input, int *count)
+int	ft_print_x(unsigned long long hx, char input, int *count)
 {
 	char	*hx_b;
 	int		i;
