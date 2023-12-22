@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 12:02:47 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/21 22:31:11 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/22 11:39:50 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	ft_print_x(unsigned int hx, char input, int *count)
 	i = hx % 16;
 	write(1, &hx_b[i], 1);
 	(*count)++;
+	return (*count);
 }
 
 /*

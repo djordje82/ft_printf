@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 18:36:09 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/21 22:44:12 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/22 11:34:36 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,12 @@ void	ft_print_p(void *ptr, int *count)
 {
 	unsigned long long	ptr_address;
 
-	ptr_address = (unsigned long long)ptr;
 	if (!ptr)
 	{
 		ft_print_s("(nil)", count);
 		return ;
 	}
-	else
-	{
-		ft_print_s("0x", count);
-		ft_print_x(ptr_address, 'x', count);
-	}
+	ptr_address = (unsigned long long)ptr;
+	ft_print_s("0x", count);
+	ft_print_x(ptr_address, 'x', count);
 }

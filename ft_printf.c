@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:35:20 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/22 11:14:54 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/22 11:32:02 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,14 @@ int	ft_printf(const char *input, ...)
 	i = 0;
 	count = 0;
 	if (!input[i])
-		return (0);
+		return (-1);
 	while (input[i])
 	{
-		if (input[i] == '%')
+		if (input[i] == '%' && input[++i])
 		{
-			i++;
 			check_conversion(input[i], args, &count);
 		}
-		else
+		else if (input[i])
 		{
 			ft_print_c(input[i], &count);
 		}

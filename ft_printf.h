@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 13:30:05 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/21 20:31:43 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/22 11:38:35 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_print_c(char c, int *count);
 void	ft_print_s(char *str, int *count);
 void	ft_print_p(void *ptr, int *count);
 void	ft_print_d(int nb, int *count);
-void	ft_print_u(unsigned int nb, int *len);
+void	ft_print_u(unsigned int nb, int *count);
 void	ft_print_x(unsigned int hx, char input, int *count);
 
 #endif
