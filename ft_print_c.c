@@ -6,14 +6,15 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 18:11:04 by dodordev          #+#    #+#             */
-/*   Updated: 2023/12/21 22:50:18 by dodordev         ###   ########.fr       */
+/*   Updated: 2023/12/22 11:15:04 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "ft_printf.h"
 
 void	ft_print_c(char c, int *count)
 {
 	write(1, &c, 1);
-	(*count)++;
+	*count += 1;
 }
